@@ -1,0 +1,26 @@
+{
+  "name": "mevn_stack",
+  "version": "1.0.0",
+  "description": "Simple web application to handle authentication with vue.js",
+  "main": "app.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Narendra Maurya",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.3",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  }
+}
